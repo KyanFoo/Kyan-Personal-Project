@@ -6,26 +6,18 @@ using static UnityEditor.PlayerSettings;
 
 public class NewBehaviourScript2 : MonoBehaviour
 {
-    /// <summary>
-    /// Rigidbody associated with conveyer belt.
-    /// /// <summary>
+    // Rigidbody associated with conveyer belt.
     [SerializeField]  
     private Rigidbody rgb;
 
-    /// <summary>
-    ///  Velocity of the conveyer belt.
-    ///  /// <summary>
+    //  Velocity of the conveyer belt.
     [SerializeField]
     private float velocity;
 
-    /// <summary>
-    /// Local direction does this push objects.
-    /// </summary>
+    // Local direction does this push objects.
     private RelativeDirection direction;
 
-    /// /// <summary>
-    ///  Relative direction to face from a local transform.
-    /// </summary>
+    //  Relative direction to face from a local transform.
     public enum RelativeDirection
     {
         Up,
@@ -36,15 +28,15 @@ public class NewBehaviourScript2 : MonoBehaviour
         Backward
     }
 
-    /// <summary>
-    /// List of GameObject on the belt.
-    /// </summary>
+    // List of GameObject on the belt.
     [SerializeField]
     private List<GameObject> onBelt;
 
     private void Start()
     {
+        // Accessing the Rigidbody component of the GameObject this script is attached to.
         rgb = GetComponent<Rigidbody>();
+        // Enable gravity and kinematic for the Rigidbody.
         rgb.useGravity = true;
         rgb.isKinematic= true;
     }
@@ -53,22 +45,27 @@ public class NewBehaviourScript2 : MonoBehaviour
     {
         if (other.rigidbody)
         {
+            // Calculate the movement direction and speed.
             Vector3 movement = velocity * GetDirection() * Time.deltaTime;
+
+            // Move the other Rigidbody's position based on the calculated movement
             other.rigidbody.MovePosition(other.transform.position + movement);
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
+        //Add GameObjects to the list when it enters teh collison.
         onBelt.Add(collision.gameObject);
     }
 
-    // When something leaves the belt
     private void OnCollisionExit(Collision collision)
     {
+        //Remove GameObjects from the list when it leaves the collision.
         onBelt.Remove(collision.gameObject);
     }
     public Vector3 GetDirection()
     {
+        //Switch to different transform based to "RelativeDirection".
         switch (this.direction)
         {
             case RelativeDirection.Up:
@@ -86,4 +83,14 @@ public class NewBehaviourScript2 : MonoBehaviour
         }
         return transform.forward;
     }
+    ///Summary///
+    ///This conveyer belt script is created throguh using reference from muultiple conveyer belt scrips found in Youtube.
+
+    ///List Storage || 3D Conveyor Belts Tutorial for Unity | 2023 Update///
+    ///I refer their "OnCollisionEnter" and "OnCollisionExit" for the GameObjects to add and remove from the list.
+    ///This function is added so that the developer would know what is on the conveyer belt throguh the Inspector instead of looking at the scene itself.
+
+    ///Conveyer Belt Transform Direction & Collisions || Conveyer Belts Explained///
+    ///I refer their "GetDirection" functions to have multipe option of how the conveyer belt will move.
+    ///I refer their "OnCollisionStay" for the GameObjects to move.
 }
