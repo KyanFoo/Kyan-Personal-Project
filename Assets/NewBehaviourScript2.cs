@@ -14,14 +14,19 @@ public class NewBehaviourScript2 : MonoBehaviour
     [SerializeField]
     private float velocity;
 
+    //  Conveyer Belt Material.
+    [SerializeField]
+    private Material material;
+
     // Local direction does this push objects.
+    [SerializeField]
     private RelativeDirection direction;
 
     //  Relative direction to face from a local transform.
     public enum RelativeDirection
     {
-        Up,
-        Down,
+        //Up,
+        //Down,
         Left,
         Right,
         Forward,
@@ -39,9 +44,42 @@ public class NewBehaviourScript2 : MonoBehaviour
         // Enable gravity and kinematic for the Rigidbody.
         rgb.useGravity = true;
         rgb.isKinematic= true;
-    }
 
-    public void OnCollisionStay(Collision other)
+        // Apply Conveyer Belt Material onto GameObjects.
+        GetComponent<Renderer>().material = material;
+    }
+    void Update()
+    {
+        if (direction == RelativeDirection.Forward)
+        {
+            Debug.Log("Forward");
+            Renderer rend = GetComponent<Renderer>();
+            rend.material.SetVector("_Direction", new Vector2(0f, -1.0f));
+            rend.material.SetFloat("_Rotation", 180.0f);
+        }
+        if (direction == RelativeDirection.Backward)
+        {
+            Debug.Log("Backward");
+            Renderer rend = GetComponent<Renderer>();
+            rend.material.SetVector("_Direction", new Vector2(0f, -1.0f));
+            rend.material.SetFloat("_Rotation", 0.0f);
+        }
+        if (direction == RelativeDirection.Right)
+        {
+            Debug.Log("Right");
+            Renderer rend = GetComponent<Renderer>();
+            rend.material.SetVector("_Direction", new Vector2(0f, -1.0f));
+            rend.material.SetFloat("_Rotation", 90.0f);
+        }
+        if (direction == RelativeDirection.Left)
+        {
+            Debug.Log("Left");
+            Renderer rend = GetComponent<Renderer>();
+            rend.material.SetVector("_Direction", new Vector2(0f, -1.0f));
+            rend.material.SetFloat("_Rotation", 270.0f);
+        }
+    }
+        public void OnCollisionStay(Collision other)
     {
         if (other.rigidbody)
         {
@@ -68,10 +106,10 @@ public class NewBehaviourScript2 : MonoBehaviour
         //Switch to different transform based to "RelativeDirection".
         switch (this.direction)
         {
-            case RelativeDirection.Up:
-                return transform.up;
-            case RelativeDirection.Down:
-                return -transform.up;
+            //case RelativeDirection.Up:
+                //return transform.up;
+            //case RelativeDirection.Down:
+                //return -transform.up;
             case RelativeDirection.Left:
                 return -transform.right;
             case RelativeDirection.Right:

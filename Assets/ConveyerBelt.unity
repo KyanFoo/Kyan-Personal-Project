@@ -291,6 +291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rgb: {fileID: 0}
   velocity: 1
+  material: {fileID: 2100000, guid: 01d2a207e2f6eb74ca9b9f447c601a0a, type: 2}
+  direction: 0
   onBelt: []
 --- !u!54 &367797174
 Rigidbody:
@@ -939,7 +941,6 @@ GameObject:
   - component: {fileID: 1993220125}
   - component: {fileID: 1993220124}
   - component: {fileID: 1993220123}
-  - component: {fileID: 1993220127}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1034,20 +1035,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1993220127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993220122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b8b015a9cb475b4db321ceb179590d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  materialToApply: {fileID: 2100000, guid: 01d2a207e2f6eb74ca9b9f447c601a0a, type: 2}
-  colorToApply: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2032771700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1296,6 @@ SceneRoots:
   - {fileID: 1073885867}
   - {fileID: 31638484}
   - {fileID: 1850271155}
-  - {fileID: 367797178}
   - {fileID: 2144416286}
+  - {fileID: 367797178}
   - {fileID: 1119731209}

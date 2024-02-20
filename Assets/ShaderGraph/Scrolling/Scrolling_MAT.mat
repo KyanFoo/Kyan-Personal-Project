@@ -64,8 +64,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rotation: 180
-    - _Scale: 2
+    - _Rotation: 90
+    - _Scale: 2.7
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
@@ -76,5 +76,5 @@ Material:
     - _Arrow_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Background: {r: 0.28930807, g: 0.28930807, b: 0.28930807, a: 0}
     - _Direction: {r: 0, g: 0, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 0.22, b: 0, a: 0}
   m_BuildTextureStacks: []
