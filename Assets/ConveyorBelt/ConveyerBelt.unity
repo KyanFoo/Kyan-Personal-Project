@@ -362,7 +362,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 01d2a207e2f6eb74ca9b9f447c601a0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -467,7 +467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd57ac8013281f44ca5d9f7c67693ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rgb: {fileID: 0}
 --- !u!65 &1073885864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -720,10 +719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 265277cacc335b944abe76456f7ce1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  conveyorSpeed: 0
-  direction: {x: 0, y: 0, z: 1}
-  onBelt: []
 --- !u!54 &1850271151
 Rigidbody:
   m_ObjectHideFlags: 0
