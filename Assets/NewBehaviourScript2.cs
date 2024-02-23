@@ -61,8 +61,8 @@ public class NewBehaviourScript2 : MonoBehaviour
         {
             Debug.Log("Backward");
             Renderer rend = GetComponent<Renderer>();
-            rend.material.SetVector("_Direction", new Vector2(0f, -1.0f));
-            rend.material.SetFloat("_Rotation", 0.0f);
+            rend.material.SetVector("_Direction", new Vector2(0f, 1.0f));
+            rend.material.SetFloat("_Rotation", 180.0f);
         }
         if (direction == RelativeDirection.Right)
         {
@@ -75,8 +75,8 @@ public class NewBehaviourScript2 : MonoBehaviour
         {
             Debug.Log("Left");
             Renderer rend = GetComponent<Renderer>();
-            rend.material.SetVector("_Direction", new Vector2(0f, -1.0f));
-            rend.material.SetFloat("_Rotation", 270.0f);
+            rend.material.SetVector("_Direction", new Vector2(0f, 1.0f));
+            rend.material.SetFloat("_Rotation", 90.0f);
         }
     }
         public void OnCollisionStay(Collision other)

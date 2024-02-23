@@ -292,7 +292,7 @@ MonoBehaviour:
   rgb: {fileID: 0}
   velocity: 1
   material: {fileID: 2100000, guid: 01d2a207e2f6eb74ca9b9f447c601a0a, type: 2}
-  direction: 0
+  direction: 2
   onBelt: []
 --- !u!54 &367797174
 Rigidbody:
