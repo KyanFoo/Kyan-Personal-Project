@@ -37,10 +37,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.1
+    - _Fill: 1
     - _FresnelPower: 2
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _WobbleX: 0
+    - _WobbleZ: 0
     m_Colors:
     - _FresnelColor: {r: 0.42767292, g: 0.23172036, b: 0.060519695, a: 0}
     - _LiquidColor: {r: 1, g: 0.29874206, b: 0.32072994, a: 0}
