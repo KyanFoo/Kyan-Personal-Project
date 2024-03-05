@@ -1020,10 +1020,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3196.000244140625,
-            "y": 203.3333282470703,
-            "width": 184.666748046875,
-            "height": 254.66664123535157
+            "x": -3196.0,
+            "y": 197.33328247070313,
+            "width": 184.6669921875,
+            "height": 254.66671752929688
         }
     },
     "m_Slots": [
@@ -1343,8 +1343,8 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -2480.0,
-            "y": 135.33334350585938,
-            "width": 209.333251953125,
+            "y": 129.33326721191407,
+            "width": 209.33349609375,
             "height": 304.0
         }
     },
@@ -1525,10 +1525,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3041.33349609375,
-            "y": 99.33332824707031,
-            "width": 140.6669921875,
-            "height": 36.00001525878906
+            "x": -3041.333251953125,
+            "y": 93.33332061767578,
+            "width": 140.666748046875,
+            "height": 35.99994659423828
         }
     },
     "m_Slots": [
@@ -1929,7 +1929,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.0,
+    "m_Value": 0.5,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
@@ -2885,9 +2885,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -2900.66650390625,
-            "y": 194.00001525878907,
-            "width": 131.3330078125,
-            "height": 119.99998474121094
+            "y": 187.9999237060547,
+            "width": 131.333251953125,
+            "height": 120.00007629394531
         }
     },
     "m_Slots": [
@@ -4310,7 +4310,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 2.0,
+    "m_Value": 2.240000009536743,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -4681,7 +4681,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.03999999910593033,
+    "m_Value": 0.09000000357627869,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
@@ -4695,8 +4695,8 @@
     "m_ObjectId": "b2e27f7a7e424c3e9232c14cf02c076c",
     "m_Title": "LiquidSurface + Texture",
     "m_Position": {
-        "x": -3335.33349609375,
-        "y": -32.00002670288086
+        "x": -3335.3330078125,
+        "y": -37.9999885559082
     }
 }
 
@@ -4713,9 +4713,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": -2784.0,
-            "y": 335.3333435058594,
-            "width": 131.333251953125,
-            "height": 120.0
+            "y": 329.33331298828127,
+            "width": 131.333740234375,
+            "height": 119.99993896484375
         }
     },
     "m_Slots": [
@@ -5149,10 +5149,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3310.000244140625,
-            "y": 26.66666030883789,
+            "x": -3309.999755859375,
+            "y": 20.66668701171875,
             "width": 154.0,
-            "height": 36.0000114440918
+            "height": 35.999942779541019
         }
     },
     "m_Slots": [
@@ -5794,7 +5794,7 @@
         "x"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {

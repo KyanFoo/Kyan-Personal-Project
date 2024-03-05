@@ -43,7 +43,7 @@ Material:
     m_Floats:
     - _Fill_Amount: 0.5
     - _FoamSmoothness: 0.2
-    - _Foam_Width: 0.106
+    - _Foam_Width: 0
     - _Fresnel_Power: 2
     - _QueueControl: 0
     - _QueueOffset: 0
