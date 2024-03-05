@@ -41,9 +41,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill_Amount: 0.72
-    - _FoamSmoothness: 0.14
-    - _Foam_Width: 0.084
+    - _Fill_Amount: 0.5
+    - _FoamSmoothness: 0.2
+    - _Foam_Width: 0.106
     - _Fresnel_Power: 2
     - _QueueControl: 0
     - _QueueOffset: 0
