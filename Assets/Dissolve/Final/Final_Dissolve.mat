@@ -66,12 +66,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Edge_Width: 0.0071
-    - _Noise_Scale: 19.3
+    - _Edge_Width: 0.01
+    - _Noise_Scale: 30
+    - _Noise_Strength: -0.15
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0
-    - _Threshold: 0.43
+    - _Threshold: 0.472
     m_Colors:
     - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Edge_Color: {r: 1, g: 0.22429907, b: 0, a: 0}
