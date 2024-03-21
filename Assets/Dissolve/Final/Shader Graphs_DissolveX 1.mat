@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DissolveX
-  m_Shader: {fileID: -6465566751694194690, guid: fe97f02679367a74999f723259e88c21, type: 3}
+  m_Name: Shader Graphs_DissolveX 1
+  m_Shader: {fileID: -6465566751694194690, guid: cab945f2eeb0821498b0a2fa0de4e081, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -53,18 +53,19 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Edge_Width: 0.0098
+    - _Edge_Width: 0.03
     - _Noise_Scale: 50
-    - _Noise_Strength: -0.11
+    - _Noise_Strength: 0.84
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0
-    - _Threshold: -0.18
+    - _Threshold: -0.02
     m_Colors:
     - _Base_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Edge_Color: {r: 0, g: 0.2697544, b: 1, a: 0}
+    - _Tilling_and_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4156519160064045551
+--- !u!114 &3326005870222529004
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
