@@ -62,10 +62,10 @@ Material:
     - _Noise_Texture: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Reverse: 1
+    - _Reverse: 0
     - _Smoothness: 0
     - _Texture_Scale: 1
-    - _Threshold: 0.068
+    - _Threshold: 0
     m_Colors:
     - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Edge_Color: {r: 0, g: 0.388236, b: 1, a: 0}

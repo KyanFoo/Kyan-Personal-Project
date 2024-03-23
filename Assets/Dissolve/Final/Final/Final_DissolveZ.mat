@@ -78,7 +78,7 @@ Material:
     - _Reverse: 1
     - _Smoothness: 0
     - _Texture_Scale: 1
-    - _Threshold: 0
+    - _Threshold: 0.221
     m_Colors:
     - _Base_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Edge_Color: {r: 0, g: 0.388236, b: 1, a: 0}
