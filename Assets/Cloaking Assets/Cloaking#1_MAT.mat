@@ -55,6 +55,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Fresnel: 8
+    - _IsNormalTexture: 0
     - _QueueControl: 1
     - _QueueOffset: 0
     - _Refraction: 0.05
